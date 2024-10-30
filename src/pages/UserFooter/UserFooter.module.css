@@ -1,0 +1,17 @@
+.footer{
+    padding: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow:0 1rem 1rem var(--color-light);
+}
+
+@media screen and (min-width: 600px) {
+    /* For PC */
+    .footer{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 300px;
+        box-shadow: rgb(195, 198, 203) 3px 0 6px 0 inset, rgba(255, 255, 255) -3px -3px 6px 1px inset;
+    }
+}

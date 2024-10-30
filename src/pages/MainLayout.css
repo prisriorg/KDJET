@@ -1,0 +1,81 @@
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.sidebar a{
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    height: 3rem;
+    margin: 0.3rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar h3{
+    text-align: center;
+    font-weight: 500;
+}
+.sidebar svg{
+    margin: 0 10px;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.sidebar a:hover{
+    padding: 0 15px;
+    background-color: #f0f0f0;
+    color: #0000FF;
+    border-radius: 13px ;
+    border: 2px solid #0000FF;
+}
+
+.sidebar a h3{
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+.loguot{
+    color: red;
+}
+
+.activea{
+    padding: 0 15px;
+    /*box-shadow: var(--color-dark) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;*/
+    transition: all 0.3s ease;
+    background-color: #f0f0f0;
+    color: #0000FF;
+    border-radius: 13px ;
+    border: 2px solid #0000FF;
+}
+
+
+@media screen and (width> 480px) {
+    /* For PC */
+
+    .closeBtn{
+        display: none;
+    }
+    .drawerBtn{
+        display: block;
+    }
+
+    .drawerCloseBtn{
+        display: none;
+    }
+}
+@media screen and (width< 480px) {
+
+    /* For PC */
+    .drawerBtn{
+        display: none;
+    }
+    .drawer{
+        display: none;
+    }
+    .drawerCloseBtn{
+        display: block;
+    }
+}
